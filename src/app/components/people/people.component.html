@@ -1,0 +1,8 @@
+<md-list>
+        <md-list-item *ngFor="let person of people">
+          <md-icon md-list-icon>face</md-icon>
+          <h4 md-line>{{person.name}}</h4>
+          <p md-line> {{person.gender}} </p>
+        </md-list-item>
+</md-list>
+<md-spinner *ngIf="loading"></md-spinner>

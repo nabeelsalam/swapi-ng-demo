@@ -1,0 +1,8 @@
+<md-list>
+        <md-list-item *ngFor="let planet of planets">
+          <md-icon md-list-icon>room</md-icon>
+          <h4 md-line>{{planet.name}}</h4>
+          <p md-line> {{planet.terrain}} </p>
+        </md-list-item>
+</md-list>
+<md-spinner *ngIf="loading"></md-spinner>
